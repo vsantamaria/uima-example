@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>  
+    <delegateAnalysisEngineSpecifiers>
+        <delegateAnalysisEngine key="date-time">
+            <import location="date-time.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="room">
+            <import location="room.xml"/>
+        </delegateAnalysisEngine>
+        <delegateAnalysisEngine key="conference">
+            <import location="conference.xml"/>
+        </delegateAnalysisEngine>
+    </delegateAnalysisEngineSpecifiers>
+    <analysisEngineMetaData>
+    <name>conferenceAggregate</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+        <flowConstraints>
+            <fixedFlow>
+                <node>room</node>
+                <node>date-time</node>
+                <node>conference</node>
+            </fixedFlow>
+        </flowConstraints>
+        <fsIndexCollection/>
+        <capabilities>
+      <capability>
+                <inputs>
+                    <type allAnnotatorFeatures="true">iextraction.annotations.Time</type>
+                    <type allAnnotatorFeatures="true">iextraction.annotations.Room</type>
+                    <type allAnnotatorFeatures="true">iextraction.annotations.Date</type>
+                </inputs>
+                <outputs>
+                    <type allAnnotatorFeatures="true">iextraction.annotations.Conference</type>
+                </outputs>
+                <languagesSupported/>
+            </capability>
+        </capabilities>
+  <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+            <outputsNewCASes>false</outputsNewCASes>
+        </operationalProperties>
+    </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

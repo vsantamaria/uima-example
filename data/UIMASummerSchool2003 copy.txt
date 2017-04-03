@@ -1,0 +1,20 @@
+﻿UIMA Summer School
+
+August 26, 2003
+UIMA 101 - The New UIMA Introduction 
+(Hands-on Tutorial)
+9:00AM-5:00PM in HAW GN-K35
+
+August 28, 2003
+FROST Tutorial
+9:00AM-5:00PM in HAW GN-K35
+
+September 15, 2003
+UIMA 201: UIMA Advanced Topics 
+(Hands-on Tutorial)
+9:00AM-5:00PM in HAW 1S-F53
+
+September 17, 2003
+The UIMA System Integration Test and Hardening Service
+The "SITH"
+3:00PM-4:30PM in HAW GN-K35
